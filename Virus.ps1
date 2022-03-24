@@ -96,8 +96,4 @@ namespace Win32{
 add-type $code 
 [Win32.Wallpaper]::SetWallpaper($MyWallpaper)
 Add-Type -AssemblyName PresentationCore,PresentationFramework
-$ButtonType = [System.Windows.MessageBoxButton]::OK
-$MessageIcon = [System.Windows.MessageBoxImage]::Error
-$MessageBody = "You are hacked by VNCS Red Team"
-$MessageTitle = "Alert !"
-$Result = [System.Windows.MessageBox]::Show($MessageBody,$MessageTitle,$ButtonType,$MessageIcon)
+
